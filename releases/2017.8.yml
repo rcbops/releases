@@ -6,7 +6,7 @@
     components:
       - name: rpc-openstack
         url: https://github.com/rcbops/rpc-openstack
-        version: r14.1.1
+        version: r14.1.0
       - name: rpc-maas
         url: https://github.com/rcbops/rpc-maas
         version: 1.0.0
