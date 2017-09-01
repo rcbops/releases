@@ -1,0 +1,12 @@
+---
+  meta-release:
+    name: 2017.9
+    description: |
+      September 2017 Meta Release
+    components:
+      - name: rpc-openstack
+        url: https://github.com/rcbops/rpc-openstack
+        version: r14.2.0
+      - name: rpc-maas
+        url: https://github.com/rcbops/rpc-maas
+        version: 1.1.2
