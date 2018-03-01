@@ -1,0 +1,18 @@
+---
+  meta-release:
+    name: 2018.03
+    description: |
+      March 2018 Meta Release, introducing rpc-upgrades. 
+    components:
+      - name: rpc-openstack
+        url: https://github.com/rcbops/rpc-openstack
+        version: r14.8.0
+      - name: rpc-maas
+        url: https://github.com/rcbops/rpc-maas
+        version: 1.7.0
+      - name: rpc-ceph
+        url: https://github.com/rcbops/rpc-ceph
+        version: 1.1.0
+      - name: rpc-upgrades
+        url: https://github.com/rcbops/rpc-upgrades
+        version: 1.0.0
