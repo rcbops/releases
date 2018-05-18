@@ -1,0 +1,18 @@
+is_product: true
+name: rpc-product-1
+releases:
+- series: master
+  versions:
+  - sha: 51297fcb82fce83dc40692c4c6d0c2f3b722f9bf
+    version: r1.0.0
+  - sha: a2b07018efefbde478829d779a77b56071ec8a39
+    version: r1.1.0
+  - sha: a4119014864187bfb92c48b215b55c4dcacd4baa
+    version: r1.2.0
+  - sha: a4a853770d3b9b3ca79b99a1d52a6e391e69e5d0
+    version: r1.3.0
+  - sha: e2686f39061d185c11245ad5a1389547fae10be2
+    version: r1.4.0
+  - sha: 7bf004de12f53bd888b4b5e1ce3e93d99e283b99
+    version: r1.4.1
+repo_url: https://github.com/mattt416/rpc-product-1
