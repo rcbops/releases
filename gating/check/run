@@ -1,0 +1,69 @@
+#!/bin/bash -x
+
+RC=0
+
+# TODO(mattt): Create custom Dockerfile with python3 in it
+which python3 || { apt-get update; apt-get install -y python3-minimal; }
+
+virtualenv --python python3 .venv3
+set +x; . .venv3/bin/activate; set -x
+pip install git+https://github.com/rcbops/rpc_component@776c7d7ddc96fd62b503c78c980256906db5a6fd#egg=rpc_component
+
+component_count=0
+non_component_count=0
+# The component cli tool takes a `from` and `to` SHA. Since we don't know how
+# many commits are in the PR, we use `master` as the `from` SHA and `HEAD` as
+# the `to` SHA. This allows us to compare against the last committed commit
+# and the changes proposed in the PR.
+src_branch="remotes/origin/master"
+pr_branch="HEAD"
+
+changes=$(git diff --pretty=format: --name-only ${src_branch} ${pr_branch})
+
+for change in ${changes}; do
+  if [[ "${change}" =~ ^"components/" ]]; then
+    component_count=$(( ${component_count} + 1 ))
+  else
+    non_component_count=$(( ${non_component_count} + 1 ))
+  fi
+done
+
+## Test 1: Check the number of components being changed at the same time
+
+[[ ${component_count} -gt 1 ]] \
+  && { echo '[FAIL] Multiple components modified in one change'; RC=1; } \
+  || echo '  [OK] Zero or one component modified in change'
+
+## Test 2: Check if a component and non-component are being changed at the same time
+
+[[ ${component_count} -gt 0 && ${non_component_count} -gt 0 ]] \
+  && { echo '[FAIL] A component and non-component change was submitted at the same time'; RC=1; } \
+  || echo '  [OK] A component and non-component change was not submitted at the same time'
+
+if [[ ${component_count} -eq 1 ]]; then
+  fail_count=0
+
+  ## Test 3: Check if a new component is being released
+
+  component --releases-dir . compare --from ${src_branch} --to ${pr_branch} --verify registration
+
+  [[ $? -ne 0 ]] \
+    && { echo '[FAIL] The component registration is not valid'; fail_count=$(( ${fail_count} + 1 )); } \
+    || echo '  [OK] The component registration is valid'
+
+  ## Test 4: Check if a component release is valid
+
+  component --releases-dir . compare --from ${src_branch} --to ${pr_branch} --verify release
+
+  [[ $? -ne 0 ]] \
+    && { echo '[FAIL] The component release is not valid'; fail_count=$(( ${fail_count} + 1 )); } \
+    || echo '  [OK] The component release is valid'
+
+  ## TODO: Test 5: Check if an existing component is being modified
+
+  [[ ${fail_count} -eq 2 ]] && RC=1
+else
+  echo '[SKIP] Zero or multiple components being modified, cannot properly test component modification'
+fi
+
+exit ${RC}
