@@ -5,4 +5,6 @@ releases:
   versions:
   - sha: 4e47e7232fc456bc9277526c39831b1450fe50de
     version: 1.0.0
+  - sha: 7a0b674ad92aa0e63f185a1aaa7830c584b9c123
+    version: 1.0.1
 repo_url: https://github.com/mattt416/rpc-component-1
