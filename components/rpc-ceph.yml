@@ -1,0 +1,20 @@
+is_product: true
+name: rpc-ceph
+releases:
+- series: master
+  versions:
+  - sha: 5ac165fa15855550e4fc3bcbba7e88b7e22bfcbb
+    version: 0.0.1
+  - sha: c1fe3459eeeedec8bde9eeda14058e509d7db3de
+    version: 0.0.2
+  - sha: c8d3687803c161c8d9ecf8a981b0b4d0ace9f042
+    version: 0.0.3
+  - sha: 3f4be33cdaffc5503ac8f17e0f6fe85a373c7a8b
+    version: 1.0.0
+  - sha: 871ae784126bea2eb783420d5b410e0dbe3945c6
+    version: 1.1.0
+  - sha: 13cf219b4c3f4eed104acc30f5f05fb39a3d6b8d
+    version: 1.1.1
+  - sha: 50acd0e9c44f46d43c418902ba62262a99a93c7f
+    version: 1.1.2
+repo_url: https://github.com/rcbops/rpc-ceph
