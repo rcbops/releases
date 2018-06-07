@@ -1,0 +1,38 @@
+is_product: false
+name: rpc-maas
+releases:
+- series: master
+  versions:
+  - sha: 8bff00061c38559301c72321865824aff7b8edcf
+    version: 1.0.0
+  - sha: b9b0c69ff114c8f65aa20986086593f068755221
+    version: 1.1.0
+  - sha: dd7e17fb29f960c5548b50d61dd89d8353662ff6
+    version: 1.1.1
+  - sha: 2d8c1bcf12979524cbb27921ffabddb9e64ced9d
+    version: 1.1.2
+  - sha: 19b38e87f9739f75f39b1510dfb4e887955b9c5b
+    version: 1.2.0
+  - sha: afd68a809b9c09bb14ee449cedbdefd8abdb4bd8
+    version: 1.2.1
+  - sha: aaa614ec29230c47d25f7436018d8ed0489b5ecb
+    version: 1.2.2
+  - sha: 9cffced341d1d12ae2f349021bcbabe289e3d787
+    version: 1.3.0
+  - sha: 4547177f98ac62337aeda5c45966437acae16c84
+    version: 1.3.1
+  - sha: b157e762441e9d12a3629b5943ba51a6d2b10bbc
+    version: 1.4.0
+  - sha: 040b13b73727bfce11f60e9e6e044750119ff084
+    version: 1.5.0
+  - sha: 8ef6a97aff976d464e2087a6470aed91fd25a738
+    version: 1.6.0
+  - sha: 200ee30453f284f630495f03651ab55babc34184
+    version: 1.7.0
+  - sha: 765c204d6ec9cbb74d0c938fc938b67817d84ea6
+    version: 1.7.1
+  - sha: 101b2a732f382f702e53d283efc6b7ee99af48bf
+    version: 1.7.2
+  - sha: 199870ba2e5dab4def6a3d862ebd5d50623a086d
+    version: 1.7.3
+repo_url: https://github.com/rcbops/rpc-maas
