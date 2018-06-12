@@ -1,0 +1,8 @@
+is_product: true
+name: rpc-hummingbird
+releases:
+- series: master
+  versions:
+  - sha: 0fd9a7171112ad88aac957681de0bb29c845903a
+    version: 1.4.0
+repo_url: https://github.com/rcbops/rpc-hummingbird
