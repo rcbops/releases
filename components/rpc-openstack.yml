@@ -1,0 +1,52 @@
+is_product: true
+name: rpc-openstack
+releases:
+- series: pike
+  versions:
+  - sha: bb6b806d06e5cd7726b24b33d26f6a6e505dc7da
+    version: r16.2.0
+  - sha: 9f5ee2a7c06f17b4cd4574d48c4cbfd2507b9839
+    version: r16.1.0
+  - sha: 7eae22384737ff702d619545e354004229fcb8df
+    version: r16.0.1
+  - sha: 8885bfb3ae0e34f6cbbb325f7680afd6ac25f372
+    version: r16.0.0
+  - sha: 9f6acc06b8fe3612cbb236770a8e32a86c63cb8a
+    version: r16.0.0-beta.1
+- series: newton
+  versions:
+  - sha: 38918cd4d4a59ba908cf078bfa726a9585b19f4f
+    version: r14.14.0
+  - sha: dd8bccc12e0994cfb764eb982f179f35375da2fa
+    version: r14.13.0
+  - sha: bbaa1702a2305c85a887f9f832f685b272f13a2a
+    version: r14.12.0
+  - sha: 685734b58072d95d6b05caa4957c678181de0141
+    version: r14.11.0
+  - sha: a7ee05455fe376b8890a064f8107fde8b5ffbc9b
+    version: r14.10.0
+  - sha: cdce96d3e7d2339ffe37c83c648f72e3ed3469b3
+    version: r14.9.0
+  - sha: f6f2f1d1e2edf19b6095c4eac5e790abaae41ed7
+    version: r14.8.0
+  - sha: 27aa6de105b0175c0efa116a61546bc9353113f7
+    version: r14.7.0
+  - sha: d68d03c5337b0af317f5cac4436faea69fbcdfa7
+    version: r14.6.0
+  - sha: 1d5c41cde37b7b321973fb72b8b28e0a4295d141
+    version: r14.5.0
+  - sha: 6ad19906e94df0652154f545102522eed789a1a8
+    version: r14.4.1
+  - sha: d05ff396be472455ab4f947db3d28da90a7441ce
+    version: r14.4.0
+  - sha: 4a2b879004603fa96d62b9fecdfbcbe85b727046
+    version: r14.3.0
+  - sha: 75649b6b07e3f0e2d145454319b7642587eda438
+    version: r14.2.0
+  - sha: e14f004f8a445bb8915791edc1197548d1c6f604
+    version: r14.1.0
+  - sha: 9be68c27fc75fa5924debac4530bb8311862d6f2
+    version: r14.0.1
+  - sha: c261edad57f143b9cfc17e6abd816aecf0a64972
+    version: r14.0.0
+repo_url: https://github.com/rcbops/rpc-openstack
