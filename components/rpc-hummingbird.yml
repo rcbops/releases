@@ -3,6 +3,8 @@ name: rpc-hummingbird
 releases:
 - series: master
   versions:
+  - sha: a2df31b7b24ba260d680d67990256fe7817b15d3
+    version: 1.5.0
   - sha: 0fd9a7171112ad88aac957681de0bb29c845903a
     version: 1.4.0
 repo_url: https://github.com/rcbops/rpc-hummingbird
