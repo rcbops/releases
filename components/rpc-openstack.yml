@@ -3,6 +3,8 @@ name: rpc-openstack
 releases:
 - series: pike
   versions:
+  - sha: 24375511b551f1e05c65e0473b528cf4f4f67fe1
+    version: r16.2.1
   - sha: bb6b806d06e5cd7726b24b33d26f6a6e505dc7da
     version: r16.2.0
   - sha: 9f5ee2a7c06f17b4cd4574d48c4cbfd2507b9839
