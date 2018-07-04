@@ -1,0 +1,27 @@
+---
+  meta-release:
+    name: 2018.07
+    description: |
+      July 2018 Meta Release
+    components:
+      - name: rpc-openstack
+        url: https://github.com/rcbops/rpc-openstack
+        version: r17.0.0
+      - name: rpc-openstack
+        url: https://github.com/rcbops/rpc-openstack
+        version: r16.2.1
+      - name: rpc-openstack
+        url: https://github.com/rcbops/rpc-openstack
+        version: r14.15.0
+      - name: rpc-maas
+        url: https://github.com/rcbops/rpc-maas
+        version: 1.7.4
+      - name: rpc-ceph
+        url: https://github.com/rcbops/rpc-ceph
+        version: 1.1.4
+      - name: rpc-upgrades
+        url: https://github.com/rcbops/rpc-upgrades
+        version: 1.1.3
+      - name: rpc-hummingbird
+        url: https://github.com/rcbops/rpc-hummingbird
+        version: 1.5.0
