@@ -3,6 +3,8 @@ name: rpc-component-2
 releases:
 - series: master
   versions:
+  - sha: 609ed5fe2ec6b6f88c540374917e84c2c43cf9c8
+    version: 1.0.3
   - sha: 8fdcb3e99a71e1eeb0014484bb6492078402e563
     version: 1.0.2
   - sha: 7646f1d0ef46b997fa976efb1faa99c47b2e6cb4
