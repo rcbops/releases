@@ -1,7 +1,7 @@
 is_product: true
 name: rpc-openstack
 releases:
-- series: master
+- series: queens
   versions:
   - sha: b8bde7955e682cdc0420b169005632cc25b96850
     version: r17.0.0
