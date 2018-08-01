@@ -3,6 +3,8 @@ name: rpc-openstack
 releases:
 - series: queens
   versions:
+  - sha: a6ec2e39c68455343e97a490fadbee996f9d9d16
+    version: r17.0.1
   - sha: b8bde7955e682cdc0420b169005632cc25b96850
     version: r17.0.0
 - series: pike
