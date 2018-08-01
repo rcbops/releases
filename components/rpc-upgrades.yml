@@ -3,6 +3,8 @@ name: rpc-upgrades
 releases:
 - series: master
   versions:
+  - sha: 8e2e5535083d2cba5adb294059847691e9f2c93f
+    version: 1.1.4
   - sha: 67f22d90ff595f19f09fe3aefdbc121cab653878
     version: 1.1.3
   - sha: 92ed57d42e4456166cd4df4151fb27b32c6d04a8
