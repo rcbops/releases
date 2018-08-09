@@ -3,6 +3,8 @@ name: rpc-product-1
 releases:
 - series: master
   versions:
+  - sha: b40ff294b47c298a0b58622d778c5d0b86cad381
+    version: 1.0.1
   - sha: 841c71093d6d0a71f5854bc7707f1d1eaa5b453e
     version: 1.0.0
 repo_url: https://github.com/mattt416/rpc-product-1
