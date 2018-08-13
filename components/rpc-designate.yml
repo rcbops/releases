@@ -1,0 +1,12 @@
+is_product: false
+name: rpc-designate
+releases:
+- series: master
+  versions:
+  - sha: 9b76f18dd50b4baccf581c9995ced7fceaf83683
+    version: 1.0.0
+- series: dev
+  versions:
+  - sha: 9b76f18dd50b4baccf581c9995ced7fceaf83684
+    version: 2.0.0
+repo_url: https://github.com/rcbops/rpc-designate
