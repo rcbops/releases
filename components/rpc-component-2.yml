@@ -11,4 +11,4 @@ releases:
     version: 1.0.1
   - sha: 76ee8bcd8862e4fb7c48e40fbf8110df80bd747c
     version: 1.0.0
-repo_url: https://github.com/mattt416/rpc-component-2
+repo_url: https://github.com/rcbops/rpc-component-2
