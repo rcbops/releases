@@ -9,4 +9,4 @@ releases:
     version: 1.0.1
   - sha: 841c71093d6d0a71f5854bc7707f1d1eaa5b453e
     version: 1.0.0
-repo_url: https://github.com/mattt416/rpc-product-1
+repo_url: https://github.com/rcbops/rpc-product-1
