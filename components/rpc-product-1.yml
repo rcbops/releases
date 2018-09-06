@@ -3,6 +3,8 @@ name: rpc-product-1
 releases:
 - series: master
   versions:
+  - sha: 78d8882facc188db3025cb8d59bdde24bd71f930
+    version: 1.0.3
   - sha: 9d868800827db39927d7a39d9e18bb433f9f727a
     version: 1.0.2
   - sha: b40ff294b47c298a0b58622d778c5d0b86cad381
