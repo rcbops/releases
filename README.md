@@ -14,6 +14,11 @@ released versions of the component.
 The file is yaml, so should begin `---`
 
 The yaml document contains a number of top-level entries:
+  * **artifact_stores**: A list of artefact stores.
+      * **description**: Short explanation of the use of the artefact store.
+      * **name**: Unique name to identify the artefact store.
+      * **public_url**: URL to the artefacts.
+      * **type**: Currently only the type file is supported.
   * **is_product**: true/false
   * **name**: String, name of the component, usually the filename without `.yml`
   * **repo_url**: The URL of the repository where the code for this component is stored
@@ -26,6 +31,11 @@ The yaml document contains a number of top-level entries:
 Example:
 ```
 ---
+artifact_stores:
+- description: "Artefact used in production deployments"
+  name: release-artifacts
+  public_url: https://example.com/artefacts
+  type: file
 is_product: false
 name: rpc-component-2
 releases:

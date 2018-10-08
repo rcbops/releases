@@ -1,3 +1,4 @@
+artifact_stores: []
 is_product: false
 name: rpc-component-1
 releases:

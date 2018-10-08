@@ -1,3 +1,4 @@
+artifact_stores: []
 is_product: true
 name: rpc-openstack
 releases:
