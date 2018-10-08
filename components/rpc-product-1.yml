@@ -1,3 +1,8 @@
+artifact_stores:
+- description: null
+  name: release-artifacts
+  public_url: https://d64fe8e21130ac7743bb-a0d9973d922c4c0543c8b2eeca3e466c.ssl.cf1.rackcdn.com/file_artifacts_no_dest/
+  type: file
 is_product: true
 name: rpc-product-1
 releases:
