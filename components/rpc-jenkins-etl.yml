@@ -1,0 +1,5 @@
+artifact_stores: []
+is_product: false
+name: rpc-jenkins-etl
+releases: []
+repo_url: https://github.com/rcbops/rpc-jenkins-etl
