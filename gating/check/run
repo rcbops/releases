@@ -7,7 +7,7 @@ which python3 || { apt-get update; apt-get install -y python3-minimal; }
 
 virtualenv --python python3 .venv3
 set +x; . .venv3/bin/activate; set -x
-pip install git+https://github.com/rcbops/rpc_component@77f546270a6c5f01d9422c78fc4f722577c6f81d#egg=rpc_component
+pip install git+https://github.com/rcbops/rpc_component@16dc9a0374f757016af132b441ca537a152119b6#egg=rpc_component
 
 component_count=0
 non_component_count=0
@@ -61,7 +61,15 @@ if [[ ${component_count} -eq 1 ]]; then
 
   ## TODO: Test 5: Check if an existing component is being modified
 
-  [[ ${fail_count} -eq 2 ]] && RC=1
+  ## Test 6: Check if a component release is valid
+
+  component --releases-dir . compare --from ${src_branch} --to ${pr_branch} --verify artifact-store
+
+  [[ $? -ne 0 ]] \
+    && { echo '[FAIL] The new component artifact-store is not valid'; fail_count=$(( ${fail_count} + 1 )); } \
+    || echo '  [OK] The new component artifact-store is valid'
+
+  [[ ${fail_count} -eq 3 ]] && RC=1
 else
   echo '[SKIP] Zero or multiple components being modified, cannot properly test component modification'
 fi
