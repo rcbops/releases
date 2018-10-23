@@ -1,4 +1,8 @@
-artifact_stores: []
+artifact_stores:
+- description: null
+  name: release-artifacts
+  public_url: https://a5ce27333a8948d82738-b28e2b85e22a27f072118ea786afca3a.ssl.cf5.rackcdn.com
+  type: file
 is_product: true
 name: rpc-openstack
 releases:
