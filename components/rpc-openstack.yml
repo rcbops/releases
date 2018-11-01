@@ -18,6 +18,8 @@ releases:
     version: r17.0.0
 - series: pike
   versions:
+  - sha: f89ac41111f0ae90852fe5c70c190e2e426f73dd
+    version: r16.2.6
   - sha: 3656048a7d3161ca3ff00d548ca658257664cb08
     version: r16.2.5
   - sha: ec4086df9f1596f331f2a7e36aa046423f41961c
