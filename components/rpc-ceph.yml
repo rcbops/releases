@@ -4,6 +4,8 @@ name: rpc-ceph
 releases:
 - series: master
   versions:
+  - sha: 9af33793a6f2b99edbaf8743c902dfd3dfb6abcc
+    version: 1.1.8
   - sha: d46e61d6b31805dab7e51cd31bddc329bb96169e
     version: 1.1.7
   - sha: 55110140bf3b463ecf572d8f4db8b4fafc2be8f4
