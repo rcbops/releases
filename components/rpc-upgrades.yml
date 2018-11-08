@@ -1,4 +1,8 @@
-artifact_stores: []
+artifact_stores:
+- description: null
+  name: release-artifacts
+  public_url: https://ed2cc5ce4ea792952a06-5946b1c04934c7963c5365082354649f.ssl.cf5.rackcdn.com
+  type: file
 is_product: false
 name: rpc-upgrades
 releases:
