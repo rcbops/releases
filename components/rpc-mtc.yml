@@ -1,0 +1,5 @@
+artifact_stores: []
+is_product: false
+name: rpc-mtc
+releases: []
+repo_url: https://github.com/rcbops/magnanimous-turbo-chainsaw
