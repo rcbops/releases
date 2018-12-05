@@ -4,6 +4,8 @@ name: rpc-maas
 releases:
 - series: master
   versions:
+  - sha: 3447bc93e873aa13118e165234ee029e9c639bc4
+    version: 1.8.0
   - sha: 81140d3a40d3ce2c2ac701b24762d41caf0e5f2d
     version: 1.7.10
   - sha: 57a3999c02cdc4a11e2d2f16739b4ada623567be
