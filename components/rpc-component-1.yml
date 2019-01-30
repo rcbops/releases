@@ -5,6 +5,8 @@ releases:
 - series: master
   versions:
   - sha: 166161d042060e9449bc2a9748413b9e9f885313
+    version: 1.0.8
+  - sha: 166161d042060e9449bc2a9748413b9e9f885313
     version: 1.0.7
   - sha: 166161d042060e9449bc2a9748413b9e9f885313
     version: 1.0.2
