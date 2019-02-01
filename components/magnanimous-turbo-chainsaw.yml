@@ -1,0 +1,9 @@
+artifact_stores: []
+is_product: false
+name: magnanimous-turbo-chainsaw
+releases:
+- series: master
+  versions:
+  - sha: 1c043d1f5e7b5a21ea8ec070d1a09f51b7906852
+    version: 10.0.0
+repo_url: https://github.com/rcbops/magnanimous-turbo-chainsaw
