@@ -6,6 +6,10 @@ artifact_stores:
 is_product: true
 name: rpc-openstack
 releases:
+- series: rocky
+  versions:
+  - sha: 25401b94ec084a30941161aa92e9e3d329421e76
+    version: r18.0.0
 - series: queens
   versions:
   - sha: 2d5d0778ab746d29a7c10b3cab0e8a2283158c23
