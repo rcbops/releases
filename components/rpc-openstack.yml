@@ -60,6 +60,8 @@ releases:
     version: r16.0.0-beta.1
 - series: newton
   versions:
+  - sha: 1b25e67e5513556d55c4044eb4ef13ad01147501
+    version: r14.24.0
   - sha: 9587acd268b9dde7cc7aaecb87ad029564745d07
     version: r14.23.0
   - sha: 72c409455bcf1691a48c63eb414eb8f0e667ebde
